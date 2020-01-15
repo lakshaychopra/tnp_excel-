@@ -13,4 +13,10 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+}
+);
+
+Route::get('student', 'StudentController@create')->name('student.create');
+Route::post('student', 'StudentController@store')->name('student.store');
+
+
